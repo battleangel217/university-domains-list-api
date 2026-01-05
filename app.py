@@ -1,6 +1,7 @@
 import json
 from collections import defaultdict
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from pytrie import Trie
 import uuid
 import requests
@@ -8,6 +9,7 @@ import time
 import re
 
 app = Flask(__name__)
+CORS(app, origins=["https://university-domains-list-api-tn4l.onrender.com", "https://upstart-e9ry.onrender.com"])
 
 data = list()
 country_index = defaultdict(list)
