@@ -106,5 +106,13 @@ def index():
             'github': 'https://github.com/Hipo/university-domains-list'}
     return jsonify(data)
 
+
+@app.route('/health')
+def health():
+    data = {
+        "status": "Ok"
+    }
+    return jsonify(data)
+
 if __name__ == "__main__":
     app.run()
