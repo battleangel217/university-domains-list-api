@@ -9,7 +9,7 @@ import time
 import re
 
 app = Flask(__name__)
-CORS(app, origins=["https://university-domains-list-api-tn4l.onrender.com", "https://kauchy.vercel.app"])
+CORS(app, origins=["https://university-domains-list-api-tn4l.onrender.com", "https://kauchy.vercel.app", "https://kachy.vercel.app"])
 
 data = list()
 country_index = defaultdict(list)
